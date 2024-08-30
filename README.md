@@ -1,0 +1,1 @@
+# giti-parseh-strapi
