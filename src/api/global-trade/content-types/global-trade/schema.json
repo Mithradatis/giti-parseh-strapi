@@ -1,0 +1,38 @@
+{
+  "kind": "singleType",
+  "collectionName": "global_trades",
+  "info": {
+    "singularName": "global-trade",
+    "pluralName": "global-trades",
+    "displayName": "Global Trade",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "blocks",
+      "required": true
+    }
+  }
+}

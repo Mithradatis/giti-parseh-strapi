@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "footer_navigations",
+  "info": {
+    "singularName": "footer-navigation",
+    "pluralName": "footer-navigations",
+    "displayName": "Footer Navigation"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "pages": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::page.page"
+    }
+  }
+}

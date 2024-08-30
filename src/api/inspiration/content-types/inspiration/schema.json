@@ -1,0 +1,37 @@
+{
+  "kind": "singleType",
+  "collectionName": "inspirations",
+  "info": {
+    "singularName": "inspiration",
+    "pluralName": "inspirations",
+    "displayName": "Inspiration"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "Title": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "string",
+      "required": true
+    },
+    "Description": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "type": "text",
+      "required": true
+    }
+  }
+}
