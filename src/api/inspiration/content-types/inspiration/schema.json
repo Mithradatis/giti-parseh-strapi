@@ -4,7 +4,8 @@
   "info": {
     "singularName": "inspiration",
     "pluralName": "inspirations",
-    "displayName": "Inspiration"
+    "displayName": "Inspiration",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -15,7 +16,7 @@
     }
   },
   "attributes": {
-    "Title": {
+    "title": {
       "pluginOptions": {
         "i18n": {
           "localized": true
@@ -24,7 +25,7 @@
       "type": "string",
       "required": true
     },
-    "Description": {
+    "description": {
       "pluginOptions": {
         "i18n": {
           "localized": true

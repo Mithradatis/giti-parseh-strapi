@@ -99,6 +99,14 @@
       "type": "string",
       "unique": false,
       "required": true
+    },
+    "alt": {
+      "pluginOptions": {
+        "i18n": {
+          "localized": false
+        }
+      },
+      "type": "string"
     }
   }
 }

@@ -1139,14 +1139,14 @@ export interface ApiHeroSliderHeroSlider extends Schema.CollectionType {
     };
   };
   attributes: {
-    Image: Attribute.Media<'images'> &
+    image: Attribute.Media<'images'> &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: false;
         };
       }>;
-    Title: Attribute.String &
+    title: Attribute.String &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -1188,6 +1188,7 @@ export interface ApiInspirationInspiration extends Schema.SingleType {
     singularName: 'inspiration';
     pluralName: 'inspirations';
     displayName: 'Inspiration';
+    description: '';
   };
   options: {
     draftAndPublish: true;
@@ -1198,14 +1199,14 @@ export interface ApiInspirationInspiration extends Schema.SingleType {
     };
   };
   attributes: {
-    Title: Attribute.String &
+    title: Attribute.String &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
         };
       }>;
-    Description: Attribute.Text &
+    description: Attribute.Text &
       Attribute.Required &
       Attribute.SetPluginOptions<{
         i18n: {
@@ -1360,6 +1361,12 @@ export interface ApiProductProduct extends Schema.CollectionType {
           localized: true;
         };
       }>;
+    alt: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
+        };
+      }>;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     createdBy: Attribute.Relation<
@@ -1465,6 +1472,12 @@ export interface ApiQuickAccessQuickAccess extends Schema.CollectionType {
       Attribute.SetPluginOptions<{
         i18n: {
           localized: true;
+        };
+      }>;
+    alt: Attribute.String &
+      Attribute.SetPluginOptions<{
+        i18n: {
+          localized: false;
         };
       }>;
     createdAt: Attribute.DateTime;
