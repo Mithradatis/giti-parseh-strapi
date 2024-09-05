@@ -29,10 +29,10 @@ module.exports = ({ env }) => ({
             },
             actionOptions: {
                 upload: {
-                    ACL: null
+                    ACL: 'public-read'
                 },
                 uploadStream: {
-                    ACL: null
+                    ACL: 'public-read'
                 },
             }
         },
