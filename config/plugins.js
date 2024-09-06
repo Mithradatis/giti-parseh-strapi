@@ -18,12 +18,14 @@ module.exports = ({ env }) => ({
         config: {
             provider: 'aws-s3',
             providerOptions: {
-                accessKeyId: env('AWS_ACCESS_KEY_ID'),
-                secretAccessKey: env('AWS_ACCESS_SECRET'),
-                region: env('AWS_REGION'),
-                params: {
-                    Bucket: env('AWS_BUCKET_NAME'),
-                },
+                s3Options: {
+                    accessKeyId: env('AWS_ACCESS_KEY_ID'),
+                    secretAccessKey: env('AWS_ACCESS_SECRET'),
+                    region: env('AWS_REGION'),
+                    params: {
+                        Bucket: env('AWS_BUCKET_NAME'),
+                    },
+                }
             },
             actionOptions: {
                 upload: {
@@ -32,12 +34,7 @@ module.exports = ({ env }) => ({
                 uploadStream: {
                     ACL: null
                 },
-            },
-            breakpoints: {
-                thumbnail: 150,
-                small: 300,
-                medium: 600,
-            },
+            }
         },
     }
 });
