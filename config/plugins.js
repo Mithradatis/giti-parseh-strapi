@@ -32,7 +32,12 @@ module.exports = ({ env }) => ({
                 uploadStream: {
                     ACL: null
                 },
-            }
+            },
+            breakpoints: {
+                thumbnail: 150,
+                small: 300,
+                medium: 600,
+            },
         },
     }
 });
