@@ -1,1 +1,1 @@
-# giti-parseh-strapi
+# emc-parseh-strapi
